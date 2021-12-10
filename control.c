@@ -18,12 +18,13 @@ int main(){
 		piper = open("luigi", O_RDONLY);
 	}
 	char line[100];
+	printf("Changes 'h' to 'H'\n");
 	while (1){
 		printf("Input:\n");
 		fgets(line, 100, stdin);
-		//write(pipew, line, 100);
+		write(pipew, line, 100);
 		read(piper, line, 100);
-		printf("%s\n", line);
+		printf("%s", line);
 	}
 	return 0;
 }

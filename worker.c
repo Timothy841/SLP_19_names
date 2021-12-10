@@ -30,7 +30,7 @@ int main(){
 		read(piper, line, 100);
 		change(line);
 		write(pipew, line, 100);
-		printf("%s\n", line);
+		printf("Changed input and fed it back\n");
 	}
 	return 0;
 }
